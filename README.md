@@ -1,6 +1,6 @@
-# automatisch PDF und DOCX Files nach GIT-Push erstellen
+# automatisch PDF Files nach GIT-Push erstellen
 
-Einfaches Beispiel wie nach einem GIT-Push automatisch ein PFD- und DOCX File aus den vorhandenen Markdown Dateien erstellt wird.
+Einfaches Beispiel wie nach einem GIT-Push automatisch ein PFD File aus dem README.md erstellt wird.
 
 In Github sind die CI-Pipelines unter Àctions` definiert
 
@@ -22,7 +22,7 @@ on:
       - created
   push:
     branches:
-      - main
+      - master
   page_build:
 
 jobs:
@@ -43,6 +43,18 @@ jobs:
           name: output
           path: _output
 ```
+
+Pipeline ist nach `Push` aktiv
+
+![Action](images/img03.jpg)
+
+Pipeline wurde erfolgreich ausgeführt
+
+![Action](images/img04.jpg)
+
+Output kann als ZIP-Datei heruntergeladen werden
+
+![Action](images/img05.jpg)
 
 
 
