@@ -2,7 +2,7 @@
 
 Einfaches Beispiel wie nach einem GIT-Push automatisch ein PFD File aus dem README.md erstellt wird.
 
-In Github sind die CI-Pipelines unter Àctions` definiert
+In Github sind die CI-Pipelines unter `Actions` definiert
 
 ![Action](images/img01.jpg)
 
